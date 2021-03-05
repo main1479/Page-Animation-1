@@ -39,7 +39,10 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 
 	async function fetchPage(page, isNext) {
-		const baseUrl = `${window.location.protocol}//${window.location.host}`;
+		const baseUrl = `${window.location.protocol}//${window.location.hostname}`;
+		if(window.location.port){
+			baseUrl += `:${window.location.port}`;
+		}
 		const res = await fetch(`${baseUrl}/${page}`);
 		const data = await res.text();
 		let markup = new DOMParser().parseFromString(data, 'text/html');
