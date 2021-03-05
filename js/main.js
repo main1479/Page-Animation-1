@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 
 		if (pages.indexOf(window.location.pathname.slice(1)) === -1) {
-			baseUrl = +`${window.location.pathname}`;
+			baseUrl +=`${window.location.pathname}`;
 		}
 		const res = await fetch(`${baseUrl}/${page}`);
 		const data = await res.text();
