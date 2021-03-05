@@ -1,0 +1,14 @@
+{
+	"name": "anim.js-v1",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node-sass sass/main.scss css/main.css -w"
+	},
+	"author": "Mainul Islam",
+	"license": "ISC",
+	"dependencies": {
+		"node-sass": "^5.0.0"
+	}
+}

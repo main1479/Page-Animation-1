@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Little Shop</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@100;300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./css/main.css" />
+		<script src="./js/anime.min.js"></script>
+		<script src="./js/main.js"></script>
+	</head>
+	<body>
+		<section class="main">
+			<ul class="sidebar">
+				<li class="sidebar__item sidebar__item-menu">
+					<a href="#">
+						<svg>
+							<use xlink:href="img/icons.svg#icon-grid"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="sidebar__item sidebar__item-logo">
+					<a href="#">
+						<svg>
+							<use xlink:href="img/icons.svg#icon-shop"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="sidebar__item sidebar__item-cart">
+					<a href="#">
+						<svg>
+							<use xlink:href="img/icons.svg#icon-cart"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<div class="container">
+				<div class="row">
+					<!-- ======================================================= -->
+					<!-- ==================== left content area ================ -->
+					<!-- ======================================================= -->
+					<div class="left">
+						<div class="text">
+							<div class="text-wrapper">
+								<h2 class="heading">
+									<span>exotic</span>
+									<span>minimal</span>
+									<span class="outlined">home</span>
+									<span class="outlined">decor</span>
+								</h2>
+								<a href="#" class="btn btn__explore">
+									explore
+									<svg>
+										<use xlink:href="img/icons.svg#icon-arrow-right"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="collections">
+							<div class="collection collection__1">
+								<h3 class="heading__sub">Collection</h3>
+								<h3 class="heading">Exotic</h3>
+								<a href="#" class="btn__text btn__text-more">More</a>
+								<img
+									src="img/collection1.png"
+									alt="Exotic Collection"
+									class="collection__img"
+								/>
+							</div>
+							<div class="collection collection__2">
+								<h3 class="heading__sub">Collection</h3>
+								<h3 class="heading">Nude</h3>
+								<a href="#" class="btn__text btn__text-more">More</a>
+								<img
+									src="img/collection2.png"
+									alt="Nude Collection"
+									class="collection__img"
+								/>
+							</div>
+						</div>
+					</div>
+					<!-- ======================================================= -->
+					<!-- ==================== right content area =============== -->
+					<!-- ======================================================= -->
+					<div class="right">
+						<div class="content content__top">
+							<img src="img/home-main-img.png" alt="bg" class="right__img" />
+						</div>
+						<div class="content content__bottom">
+							<ul class="social__box">
+								<li><a href="#">fb</a></li>
+								<li><a href="#">in</a></li>
+								<li><a href="#">tw</a></li>
+							</ul>
+							<div class="indicator__box">
+								<button class="indicator active">&nbsp;</button>
+								<button class="indicator">&nbsp;</button>
+								<button class="indicator">&nbsp;</button>
+								<button class="indicator">&nbsp;</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="navigation">
+				<button class="toggle__next btn__toggle-page">
+					<svg>
+						<use xlink:href="img/icons.svg#icon-arrow-right"></use>
+					</svg>
+				</button>
+				<button class="toggle__prev btn__toggle-page">
+					<svg>
+						<use xlink:href="img/icons.svg#icon-arrow-left"></use>
+					</svg>
+				</button>
+			</div>
+		</section>
+	</body>
+</html>
