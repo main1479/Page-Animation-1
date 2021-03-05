@@ -39,9 +39,13 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 
 	async function fetchPage(page, isNext) {
-		const baseUrl = `${window.location.protocol}//${window.location.hostname}`;
+		let baseUrl = `${window.location.protocol}//${window.location.hostname}`;
 		if(window.location.port){
 			baseUrl += `:${window.location.port}`;
+		}
+
+		if (pages.indexOf(window.location.pathname.slice(1)) === -1) {
+			baseUrl = +`${window.location.pathname}`;
 		}
 		const res = await fetch(`${baseUrl}/${page}`);
 		const data = await res.text();
